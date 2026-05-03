@@ -1,20 +1,17 @@
-const CACHE_NAME = 'order-form-v1';
-
-// Install Event
+// Service Worker
 self.addEventListener('install', (event) => {
-    self.skipWaiting();
+  self.skipWaiting();
 });
 
-// Activate Event
-self.addEventListener('activate', (event) => {
-    event.waitUntil(clients.claim());
-});
-
-// Fetch Event (Network First Strategy - എക്സൽ ഫയലുകൾ അപ്ഡേറ്റ് ആവാൻ ഇത് സഹായിക്കും)
 self.addEventListener('fetch', (event) => {
-    event.respondWith(
-        fetch(event.request).catch(() => {
-            return caches.match(event.request);
-        })
-    );
+  // ബ്രൗസർ നോട്ടിഫിക്കേഷൻ വരാൻ ഈ ഫെച്ച് ഇവന്റ് അത്യാവശ്യമാണ്
+  event.respondWith(fetch(event.request));
 });
+
+
+### 3. index.html-ൽ ചേർക്കേണ്ടത്
+നിങ്ങളുടെ index.html ഫയലിൽ താഴെ പറയുന്ന കാര്യങ്ങൾ മാത്രം ചെയ്താൽ മതി:
+*A. <head> സെക്ഷനിൽ ഇത് ചേർക്കുക:*
+html
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#14532d">
