@@ -1,0 +1,23 @@
+{
+  "name": "Ayurvedic Order Form",
+  "short_name": "Indent",
+  "description": "Multi-supplier Ayurvedic order form.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f1f5f9",
+  "theme_color": "#14532d",
+  "icons": [
+    {
+      "src": "./logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
