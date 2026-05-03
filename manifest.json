@@ -1,0 +1,27 @@
+{
+  "name": "Ayurvedic Order Form",
+  "short_name": "Indent",
+  "description": "Multi-supplier Ayurvedic order form with auto-budget optimization and GST pricing. Supports Pattiam, Ayurdhara, and Keralasree.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f1f5f9",
+  "theme_color": "#14532d",
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "https://sumteck.github.io/indent/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://sumteck.github.io/indent/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
