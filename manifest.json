@@ -1,0 +1,22 @@
+{
+  "short_name": "indent",
+  "name": "pattiam ayurdhara keralasree order form",
+  "icons": [
+    {
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHSnlk07dlUxrQlDkKsXnIYq7k8BwFDGX9pg&s",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHSnlk07dlUxrQlDkKsXnIYq7k8BwFDGX9pg&s",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#87CEEB",
+  "background_color": "#ffffff",
+  "orientation": "landscape"
+}
