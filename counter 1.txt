@@ -1,0 +1,44 @@
+<div class="visitor-counter-card">
+    <h3>👁️സന്ദർശകർ <div id="count-value"></div>                    </h3>
+    
+</div>
+
+<style>
+    .visitor-counter-card {
+        background-color: #e0f2fe; /* Sky Blue പശ്ചാത്തലം */
+        border: 2px solid #7dd3fc;
+        border-radius: 12px;
+        padding: 15px;
+        text-align: center;
+        max-width: 200px;
+        margin: 10px auto;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .visitor-counter-card h3 {
+        margin: 0;
+        font-size: 14px;
+        color: #0369a1;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    #count-value {
+        font-size: 28px;
+        font-weight: bold;
+        color: #0c4a6e;
+        margin-top: 5px;
+    }
+</style>
+
+<script>
+    // നിങ്ങളുടെ വർക്കറിൽ നിന്ന് ഡാറ്റ എടുക്കുന്നു
+    fetch('https://sumteck.tksumesh85.workers.dev?site=main_blog')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('count-value').innerText = data.views;
+        })
+        .catch(err => {
+            document.getElementById('count-value').innerText = "0";
+            console.error("Error loading counter", err);
+        });
+</script>
